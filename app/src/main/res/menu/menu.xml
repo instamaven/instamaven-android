@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--
+        <item
+            android:id="@+id/action_add_badge"
+            android:icon="@drawable/ic_add_badge"
+            android:orderInCategory="90"
+            android:title="@string/create_badge_app_bar"
+            app:showAsAction="never" />
+            -->
+    <!--
+        <item
+            android:id="@+id/action_settings"
+            android:icon="@drawable/ic_settings"
+            android:orderInCategory="100"
+            android:title="@string/settings"
+            app:showAsAction="never" />
+    -->
+    <!--
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_action_action_search"
+        android:orderInCategory="100"
+        android:title="@string/abc_search_hint"
+        app:showAsAction="always" />
+-->
+
+    <!--
+<item android:id="@+id/action_refresh_filters"
+    android:title="delete"
+    android:icon="@drawable/ic_delete"
+    app:showAsAction="always"/>
+-->
+
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_search"
+        android:title="@string/search"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_search_advanced"
+        android:icon="@drawable/ic_filter"
+        android:title="@string/search_advanced"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_videoCall"
+        android:enabled="false"
+        android:icon="@drawable/ic_action_videocall"
+        android:orderInCategory="130"
+        android:title="@string/video_call"
+        android:visible="true"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_share"
+        android:icon="@drawable/ic_share"
+        android:orderInCategory="120"
+        android:title="@string/share"
+        android:visible="false"
+        app:showAsAction="ifRoom"/>
+
+</menu>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_allActivities"
+        android:icon="@drawable/ic_all_activities"
+        android:title="@string/all_activities" />
+
+    <item
+        android:id="@+id/navigation_transactions"
+        android:icon="@drawable/ic_coins_in"
+        android:title="@string/list_transactions" />
+
+    <item
+        android:id="@+id/navigation_withdrawing"
+        android:icon="@drawable/ic_coins_out"
+        android:title="@string/withdrawing" />
+
+</menu>

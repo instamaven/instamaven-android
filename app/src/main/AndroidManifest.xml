@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.instamaven.app">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.Sc" />
+
+    <application
+        android:name=".activities.IMApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/fcm_signaling_channel_id" />
+
+        <service android:name=".services.FirebaseMessaging">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".services.FirebaseInstanceID">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".activities.SplashscreenActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.SignInActivity"
+            android:theme="@style/AnimationActivity" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_application_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.RegisterActivity" />
+        <activity android:name=".activities.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+
+        <provider
+            android:name=".providers.SuggestionProvider"
+            android:authorities="com.instamaven.app.SuggestionProvider" />
+
+        <activity
+            android:name=".activities.BadgeDetailsActivity"
+            android:label=""
+            android:parentActivityName=".activities.MyBadgeListActivity"
+            android:theme="@style/AppTheme.AppBarTheme">
+            <intent-filter android:label="@string/view_badge">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="instamaven.com"
+                    android:pathPrefix="/badges"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.VideoChatActivity"
+            android:noHistory="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.EditBadgeActivity"
+            android:label="@string/create_badge"
+            android:parentActivityName=".activities.MainActivity"
+            android:theme="@style/AppTheme.AppBarTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activities.AddCommentActivity"
+            android:parentActivityName=".activities.MainActivity"
+            android:theme="@style/AppTheme.AppBarTheme"
+            android:windowSoftInputMode="stateHidden" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".activities.MapsActivity"
+            android:label="@string/title_activity_maps"
+            android:parentActivityName=".activities.BadgeDetailsActivity"
+            android:theme="@style/AppTheme.AppBarTheme" />
+        <activity
+            android:name=".activities.CommentsListActivity"
+            android:label="@string/comments"
+            android:parentActivityName=".activities.BadgeDetailsActivity"
+            android:theme="@style/AppTheme.AppBarTheme" />
+        <activity
+            android:name="com.braintreepayments.api.BraintreeBrowserSwitchActivity"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="${applicationId}.braintree" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.ProfileActivity"
+            android:label="@string/profile"
+            android:parentActivityName=".activities.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.AppBarTheme" />
+        <activity
+            android:name=".activities.ActivitiesListActivity"
+            android:parentActivityName=".activities.ProfileActivity"
+            android:theme="@style/AppTheme.AppBarTheme" />
+        <activity
+            android:name=".activities.MyBadgeListActivity"
+            android:label="@string/my_badges"
+            android:parentActivityName=".activities.ProfileActivity"
+            android:theme="@style/AppTheme.AppBarTheme" />
+        <activity
+            android:name=".activities.TransactionsListActivity"
+            android:label="@string/list_transactions"
+            android:parentActivityName=".activities.ProfileActivity"
+            android:theme="@style/AppTheme.AppBarTheme" />
+        <activity
+            android:name=".activities.WithdrawingListActivity"
+            android:label="@string/withdrawing"
+            android:parentActivityName=".activities.ProfileActivity"
+            android:theme="@style/AppTheme.AppBarTheme" />
+        <activity
+            android:name=".activities.ChatLogsListActivity"
+            android:label="@string/chat_logs"
+            android:parentActivityName=".activities.ProfileActivity"
+            android:theme="@style/AppTheme.AppBarTheme" />
+        <activity
+            android:name=".activities.ActivitiesBottomNavigationActivity"
+            android:label="@string/activities"
+            android:parentActivityName=".activities.ProfileActivity"
+            android:theme="@style/AppTheme.AppBarTheme" />
+        <activity
+            android:name=".activities.NotificationsActivity"
+            android:label="@string/notifications"
+            android:parentActivityName=".activities.ProfileActivity"
+            android:theme="@style/AppTheme.AppBarTheme" />
+        <activity
+            android:name=".activities.FavoritesBadgeActivity"
+            android:label="@string/favorites"
+            android:parentActivityName=".activities.ProfileActivity"
+            android:theme="@style/AppTheme.AppBarTheme" />
+        <activity
+            android:name=".activities.ChatLogsBottomNavigationActivity"
+            android:label="@string/chat_logs"
+            android:parentActivityName=".activities.ProfileActivity"
+            android:theme="@style/AppTheme.AppBarTheme" />
+        <activity
+            android:name=".activities.ActivitiesTabsActivity"
+            android:label="@string/activities"
+            android:parentActivityName=".activities.ProfileActivity"
+            android:theme="@style/AppTheme.AppBarTheme" />
+        <activity
+            android:name=".activities.ChatLogsTabsActivity"
+            android:label="@string/chat_logs"
+            android:parentActivityName=".activities.ProfileActivity"
+            android:theme="@style/AppTheme.AppBarTheme" />
+        <activity
+            android:name=".activities.WelcomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.SearchActivity"
+            android:label="@string/search_advanced"
+            android:parentActivityName=".activities.MainActivity"
+            android:theme="@style/AppTheme.AppBarTheme" />
+        <activity
+            android:name=".activities.BadgeListActivity"
+            android:label="Badges Found"
+            android:parentActivityName=".activities.ProfileActivity"
+            android:theme="@style/AppTheme.AppBarTheme" />
+        <activity
+            android:name=".activities.BadgeListMapsActivity"
+            android:label="Badges Found"
+            android:parentActivityName=".activities.SearchActivity"
+            android:theme="@style/AppTheme.AppBarTheme" />
+        <activity
+            android:name=".activities.BadgesTabsActivity"
+            android:label="Badges"
+            android:parentActivityName=".activities.ProfileActivity"
+            android:theme="@style/AppTheme.AppBarTheme" />
+        <activity
+            android:name=".activities.SettingsActivity"
+            android:label="@string/settings"
+            android:parentActivityName=".activities.MainActivity"
+            android:theme="@style/AppTheme.AppBarTheme" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity
+            android:name=".activities.AvatarsCategoriesListActivity"
+            android:label="Instamaven Themes"
+            android:parentActivityName=".activities.ProfileActivity"
+            android:theme="@style/AppTheme.AppBarTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.GET_CONTENT" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="image/*" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.AvatarsGridActivity"
+            android:label="Choose Avatar"
+            android:parentActivityName=".activities.AvatarsCategoriesListActivity"
+            android:theme="@style/AppTheme.AppBarTheme"/>
+    </application>
+
+</manifest>

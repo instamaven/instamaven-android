@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_all_chatlogs"
+        android:icon="@drawable/ic_chatlogs_all"
+        android:title="@string/all_chatlogs" />
+
+    <item
+        android:id="@+id/navigation_income"
+        android:icon="@drawable/ic_chatlogs_income_call"
+        android:title="@string/income_chatlogs" />
+
+    <item
+        android:id="@+id/navigation_outcome"
+        android:icon="@drawable/ic_chatlogs_outcome_call"
+        android:title="@string/outcome_chatlogs" />
+
+</menu>

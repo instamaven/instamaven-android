@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3f51b5</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="background_material_light">#daffffff</color>
+
+    <!-- Button Color -->
+    <color name="btn_color_red">#ff5817</color>
+    <color name="btn_color_green">#86c351</color>
+
+    <!-- Color Categories -->
+    <color name="cat_0">#ffd000</color>
+    <color name="cat_1">#ffac00</color>
+    <color name="cat_2">#ff8b00</color>
+    <color name="cat_3">#ff5500</color>
+    <color name="cat_4">#e2002b</color>
+    <color name="cat_5">#d3135a</color>
+    <color name="cat_6">#b70d84</color>
+    <color name="cat_7">#8a1270</color>
+    <color name="cat_8">#0030c9</color>
+    <color name="cat_9">#2d00a8</color>
+    <color name="cat_10">#002372</color>
+
+    <!-- Others Color -->
+    <color name="toolbar_bckg">#666666</color>
+    <color name="gradientStart">#5B5B5B</color>
+    <color name="gradientEnd">#393939</color>
+    <color name="gradientAudioOnlyStart">#343434</color>
+    <color name="gradientAudioOnlyEnd">#6e6e6e</color>
+    <color name="audiOnlyBackground">#c2e8e8e8</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000</color>
+    <color name="startCall">#6aadbf</color>
+    <color name="endCall">#cb1e28</color>
+    <color name="quality_alert">#cb1e28</color>
+    <color name="quality_warning">#fef9c8</color>
+    <color name="warning_text">#ad7212</color>
+    <color name="bckg_bar">#cc000000</color>
+    <color name="screensharing_bar">#7ED321</color>
+    <color name="accent_material_light">#86c351</color>
+    <color name="grey">#caa9a9a9</color>
+    <color name="green">#479900</color>
+    <color name="primary_dark_material_light_1">#000000</color>
+    <color name="primary_material_light_1">#000000</color>
+    <color name="primary_material_light">#795548</color>
+
+</resources>

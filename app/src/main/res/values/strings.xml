@@ -1,0 +1,416 @@
+<resources>
+    <!-- Strings -->
+    <string name="app_name">InstaMaven</string>
+    <string name="email">Email</string>
+    <string name="or">or</string>
+    <string name="empty"></string>
+    <string name="empty_error">Empty value</string>
+    <string name="welcome">Welcome</string>
+    <string name="welcome_to_instamaven">Welcome to instamaven</string>
+    <string name="personal_info">Personal Info</string>
+    <string name="customer_info">Customer Info</string>
+    <string name="primary_address">Address Info</string>
+    <string name="address1">Address: </string>
+    <string name="address2"> </string>
+    <string name="city">City:</string>
+    <string name="state">State:</string>
+    <string name="zip">Zip:</string>
+    <string name="country">Country:</string>
+    <string name="name">Name</string>
+    <string name="next">Next</string>
+    <string name="next_arrow">Next >></string>
+    <string name="back">Press Back</string>
+    <string name="badges">Badges:</string>
+    <string name="calling">Calling...</string>
+    <string name="income_call">Income Call...</string>
+    <string name="date">Date:</string>
+    <string name="value">Value:</string>
+    <string name="address">Your Full Post Address</string>
+    <string name="save_badge">Save Badge</string>
+    <string name="to_exit">to exit the profile, click the log out</string>
+    <string name="list">List</string>
+    <string name="title_root_category">Available Categories</string>
+    <string name="select_categories">Select Categories</string>
+    <string name="edit_title">Title</string>
+    <string name="edit_description">A short description to promote yourself</string>
+    <string name="description">Description</string>
+    <string name="edit_price">Price</string>
+    <string name="edit_address">Address:</string>
+    <string name="edit_url">Web Site:</string>
+    <string name="edit_categories">Categories:</string>
+    <string name="search">Search</string>
+    <string name="search_arrow">Search >></string>
+    <string name="create_badge_app_bar">Create Badge</string>
+    <string name="edit_badge_app_bar">Edit Badge</string>
+    <string name="view_badge">InstaMaven Badge</string>
+    <string name="video_call">Video Call</string>
+    <string name="call">Call</string>
+    <string name="call_length">Call Length:</string>
+    <string name="settings">Settings</string>
+    <string name="comments">Comments</string>
+    <string name="like">Like</string>
+    <string name="categories">All Badges</string>
+    <string name="categories_choice">Choose Categories</string>
+    <string name="profile">Profile</string>
+    <string name="account">Account</string>
+    <string name="activation">Activation: </string>
+    <string name="amount">Amount: </string>
+    <string name="addBadge">Add Badge</string>
+    <string name="my_badges">My Badges</string>
+    <string name="chat_logs">Chat Logs</string>
+    <string name="all_chatlogs">All Chat Logs</string>
+    <string name="income_chatlogs">Income</string>
+    <string name="outcome_chatlogs">Outcome</string>
+    <string name="activities">Activities</string>
+    <string name="activities_not_found">Activities not found</string>
+    <string name="all_activities">All Activities</string>
+    <string name="list_transactions">Transactions</string>
+    <string name="transactions_not_found">Transactions not found</string>
+    <string name="list_withdrawing">Withdrawing</string>
+    <string name="withdrawing_not_found">Withdrawing not found</string>
+    <string name="wallet">Wallet</string>
+    <string name="favorites">Favorites</string>
+    <string name="notifications">Notifications</string>
+    <string name="share">Share</string>
+    <string name="help">Help</string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="logout_profile">Logout From Profile</string>
+    <string name="logout_profile_alert">Do you want to logout?</string>
+    <string name="notification_all_delete">All Notifications Will Be Cleared </string>
+    <string name="register">Don\'t have an account?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="registration">Registration</string>
+    <string name="your_name">Your Name:</string>
+    <string name="your_email">Your Email:</string>
+    <string name="user">User:</string>
+    <string name="users">Users:</string>
+    <string name="user_name">User Name:</string>
+    <string name="user_email">User Email:</string>
+    <string name="customer_name">Customer Name</string>
+    <string name="recharge">Recharge</string>
+    <string name="withdraw">Withdraw</string>
+    <string name="withdrawing">Withdrawing</string>
+    <string name="charge">Charge: </string>
+    <string name="reward">Reward: </string>
+    <string name="sec">sec.</string>
+    <string name="coins">Coins</string>
+    <string name="coins_withdraw">Coins:</string>
+    <string name="coin_price">Coin Price:</string>
+    <string name="in_coins">In Coins</string>
+    <string name="choice_withdraw">Withdraw</string>
+    <string name="number_withdraw">How many coins to withdraw</string>
+    <string name="min_withdraw_coins">from %d to %d coins</string>
+    <string name="withdraw_error">You can withdraw from %d to %d coins</string>
+    <string name="per_minute">Per Minute</string>
+    <string name="choose_package">Choose Package</string>
+    <string name="logged_with">Logged With</string>
+    <string name="bonuses">Bonuses:</string>
+    <string name="balance">Balance:</string>
+    <string name="password">Password</string>
+    <string name="create_badge">Create Badge</string>
+    <string name="password_confirmation">Password Confirmation</string>
+    <string name="badges_not_found">Badges not found</string>
+    <string name="call_not_found">Call not found</string>
+    <string name="themes_not_found">Themes not found</string>
+    <string name="comments_not_found">Comments not found</string>
+    <string name="notifications_not_found">Notifications not found</string>
+    <string name="chatlogs_not_found">Chat Logs not found</string>
+    <string name="income_call_not_found">Income call not found</string>
+    <string name="outcome_call_not_found">Outcome call not found</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="profile_corrupted">Profile is corrupted</string>
+    <string name="btn_tag">btn_%d</string>
+    <string name="signal_sent">Request Sent to Badge Owner</string>
+    <string name="signal_video">Video request from %s</string>
+    <string name="signal_chat">Chat request from %s</string>
+    <string name="reject_video">Video request rejected</string>
+    <string name="video_request">Video Request</string>
+    <string name="video_finished">Video Finished</string>
+    <string name="chat_request">Chat Request</string>
+    <string name="user_busy">User Busy</string>
+    <string name="user_busy_msg">User cannot receive your call right now</string>
+    <string name="check_empty_title">Please enter title</string>
+    <string name="check_empty_description">Please enter description</string>
+    <string name="check_empty_price">Please enter price</string>
+    <string name="check_empty_comment">Please enter comment</string>
+    <string name="check_empty_search_keywords">Please enter keywords</string>
+    <string name="check_wrong_type_url">Format url address is invalid, use http://</string>
+    <string name="alarm_title_error">Error</string>
+    <string name="alarm_text_error">Message</string>
+    <string name="alarm_title_complete">Complete!</string>
+    <string name="done">Done</string>
+    <string name="activation_badge_title">Badge Activation</string>
+    <string name="activation_badge_message">Activation cost is %d %s. Activate this badge?</string>
+    <string name="activation_alert_complete">Your badge have been activated</string>
+    <string name="deactivation_badge_title">Badge Deactivation</string>
+    <string name="deactivation_badge_massages">Deactivate this badge?</string>
+    <string name="deactivation_alarm_complete">Your badge have been deactivated</string>
+    <string name="edit_mode">Edit Mode</string>
+    <string name="alarm_text_complete">Your badge have been saved</string>
+    <string name="alarm_text_comment">Your comment have been saved</string>
+    <string name="please_rate">Please rate the badge</string>
+    <string name="please_comment">Please leave your comment</string>
+    <string name="add_comment">Add Your Comment</string>
+    <string name="comment_here">Add Your Comment Here</string>
+    <string name="save_comment">Save Comment</string>
+    <string name="ok_btn">OK</string>
+    <string name="cancel_btn">Cancel</string>
+    <string name="clear_btn">Clear</string>
+    <string name="recharge_title">Check Your Balance</string>
+    <string name="recharge_message">Your balance is %d %s.</string>
+    <string name="click_back_exit">Please click BACK again to exit application</string>
+    <string name="show_maps">Show on map:</string>
+    <string name="show">Map View:</string>
+    <string name="price_type">Price Type:</string>
+    <string name="radio_button_fixed">Fixed Price</string>
+    <string name="notifications_clear">All Notifications Clear</string>
+    <string name="radio_button_per_minutes">Per Minute</string>
+    <string name="payment_transaction">Payment Transaction</string>
+    <string name="payment_completed">Payment Successfully Completed</string>
+    <string name="withdraw_completed">Operation have been completed. We will contact you shortly.</string>
+    <string name="signed_in_facebook">Welcome! You Signed In With Facebook</string>
+    <string name="signed_in_google">Welcome! You Signed In With Google</string>
+    <string name="signed_in_twitter">Welcome! You Signed In With Twitter</string>
+    <string name="permissions_alert">This app needs access to your camera and mic to make video calls</string>
+    <string name="ringtone">Ringtone</string>
+    <string name="ringtone_select">Select a ringtone</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_maps">Maps</string>
+    <string name="rate_type_1">Very Bad</string>
+    <string name="rate_type_2">Not Bad</string>
+    <string name="rate_type_3">Good</string>
+    <string name="rate_type_4">Great</string>
+    <string name="rate_type_5">Awesome</string>
+    <string name="status">Status</string>
+    <string name="status_offline_online">Status offline/online</string>
+    <string name="status_online">online</string>
+    <string name="status_offline">offline</string>
+    <string name="status_all">all</string>
+    <string name="status_visible">Visible</string>
+    <string name="status_invisible">Invisible</string>
+    <string name="enabled_offline_mode">Enabled offline mode, you can not receive or make calls</string>
+    <string name="message_offline">Do you want to enable offline mode? Calls will not be available,
+you can not receive or make calls.</string>
+    <string name="message_online">Enable online mode?</string>
+    <string name="type_keywords">Type keywords</string>
+    <string name="search_advanced">Advanced Search</string>
+    <string name="distance">Choose Distance</string>
+    <string name="location">My Location:</string>
+    <string name="message_clean_search_filters">Search filters will be cleared</string>
+    <string name="clear_filters">Clear Filters</string>
+    <string name="km">km</string>
+    <string name="ml">ml</string>
+    <string name="kilometers">kilometers</string>
+    <string name="miles">miles</string>
+    <string name="open_arrow">Open >></string>
+    <string name="show_my_location">Use my location</string>
+    <string name="show_my_location_message">You can use map, to search badges</string>
+    <string name="show_search_results">Unit</string>
+    <string name="show_search_results_message">Use this type determine distance</string>
+    <string name="on_demand">on demand</string>
+    <string name="badge_type">Badge type:</string>
+    <string name="message_use_avatar">Use This Avatar?</string>
+    <string name="online_badges">Online Badges</string>
+    <string name="ondemand_badges">On Demand Badges</string>
+
+    <string name="title_main_activity">Main Activity</string>
+
+    <!--Facebook -->
+    <string name="facebook_application_id">---------------</string>
+    <string name="fb_login_protocol_scheme">fb------------</string>
+
+    <!-- Google -->
+    <string name="server_client_id">-----------------.apps.googleusercontent.com</string>
+
+    <!--Twitter -->
+    <string name="com.twitter.sdk.android.CONSUMER_KEY">----------------</string>
+    <string name="com.twitter.sdk.android.CONSUMER_SECRET">-----------------</string>
+
+    <string name="twitter_api_key">-------------</string>
+    <string name="twitter_secret_key">--------------</string>
+
+    <!-- OpenTok -->
+    <string name="opentok_api_key">------------</string>
+
+    <!-- Firebase Notifications -->
+    <string name="fcm_server_api_key" translatable="false">-----------------</string>
+    <string name="fcm_signaling_channel_id" translatable="false">fcm_signaling_channel</string>
+    <string name="fcm_signaling_channel_name" translatable="false">InstaMaven Channel</string>
+    <string name="fcm_signaling_channel_description" translatable="false">FCM Signaling Channel is used to notify users on call requests</string>
+    <string name="fcm_channel_name" translatable="false">InstaMaven Badges Channel</string>
+    <string name="fcm_channel_description" translatable="false">Badges Notification Channel is used to notify users on new sharings</string>
+
+    <!-- URLS -->
+    <string name="api_url">https://instamaven.com</string>
+    <string name="get_profile">/api/v1/profile</string>
+    <string name="get_payment_token">/api/v1/payment/token</string>
+    <string name="get_categories_tree">/api/v1/categories</string>
+    <string name="get_categories">/api/v1/categories/%d</string>
+    <string name="get_categories_list">/api/v1/categories/list</string>
+    <string name="get_categories_show">/api/v1/categories/show/%d</string>
+    <string name="get_badge_details">/api/v1/badges/%d</string>
+    <string name="get_my_badges">/api/v1/badges/my</string>
+    <string name="get_comments">/api/v1/comments/%d</string>
+    <string name="get_favorites">/api/v1/favorites</string>
+    <string name="get_search">/api/v1/search</string>
+    <string name="get_package">/api/v1/packages</string>
+    <string name="get_fcm">/api/v1/fcm/%d</string>
+    <string name="get_connection">/api/v1/connection/%d</string>
+    <string name="get_transactions">/api/v1/transactions</string>
+    <string name="get_withrawings">/api/v1/withdraw</string>
+    <string name="get_notifications">/api/v1/notifications</string>
+    <string name="get_activities">/api/v1/activities</string>
+    <string name="get_activities_income">/api/v1/activities/income</string>
+    <string name="get_activities_outcome">/api/v1/activities/outcome</string>
+    <string name="get_chatlogs">/api/v1/chatlogs</string>
+    <string name="get_chatlogs_income">/api/v1/chatlogs/income</string>
+    <string name="get_chatlogs_outcome">/api/v1/chatlogs/outcome</string>
+    <string name="get_avatars_categories">/api/v1/avatars/categories</string>
+    <string name="get_avatars_category">/api/v1/avatars/show/%s</string>
+    <string name="post_login_fb">/api/v1/login_facebook</string>
+    <string name="post_login_google">/api/v1/login_google</string>
+    <string name="post_login_tw">/api/v1/login_twitter</string>
+    <string name="post_user_register">/api/v1/register</string>
+    <string name="post_user_login">/api/v1/login_user</string>
+    <string name="post_user_logout">/api/v1/logout</string>
+    <string name="post_payment_create">/api/v1/payment/create</string>
+    <string name="post_withdraw">/api/v1/withdraw</string>
+    <string name="post_rate_badge">/api/v1/rate/%d</string>
+    <string name="post_create_badge">/api/v1/badges</string>
+    <string name="post_favorites">/api/v1/favorites/%d</string>
+    <string name="post_connection">/api/v1/connection</string>
+    <string name="post_comments">/api/v1/comments/%d</string>
+    <string name="post_fcm">/api/v1/fcm</string>
+    <string name="post_add_notifications">/api/v1/notifications</string>
+    <string name="post_place">/api/v1/place</string>
+    <string name="post_profive">/api/v1/profile</string>
+    <string name="post_create_avatar">/api/v1/profile/avatar</string>
+    <string name="patch_edit_badge">/api/v1/badges/%d</string>
+    <string name="patch_badge_activate">/api/v1/badges/active/%d</string>
+    <string name="patch_clear_notifications">/api/v1/notifications</string>
+    <string name="patch_user_status">/api/v1/profile/status</string>
+    <string name="patch_change_avatar">/api/v1/profile/avatar</string>
+    <string name="delete_notifications">/api/v1/notifications/%d</string>
+    <string name="signal_request_session">/api/v1/signal/session</string>
+    <string name="signal_request_video">/api/v1/signal/request</string>
+    <string name="signal_check">/api/v1/signal/check</string>
+    <string name="signal_completed">/api/v1/signal/completed</string>
+
+    <string name="url_empty">URL is empty.</string>
+    <string name="session_expired">Session have been expired.</string>
+    <string name="network_quality">Network connection is unstable.</string>
+    <string name="reconnecting">The session is reconnecting</string>
+    <string name="reconnected">The session reconnected</string>
+    <string name="permissions_denied_title">Permissions Denied</string>
+    <string name="permissions_denied">Cannot use this app without requested permission. Please, grant audio and video permissions</string>
+    <string name="alert_permissions_denied">Without these permissions the app is unable to make call.Are you sure you want to deny these permissions?</string>
+    <string name="title_activity_chat_logs_bottom_navigation">ChatLogsBottomNavigationActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_badge_list">BadgeListActivity</string>
+
+    <string-array name="distance">
+        <item>km</item>
+        <item>ml</item>
+    </string-array>
+
+    <string-array name="distance_population_low_km">
+        <item>Any</item>
+        <item>1 km</item>
+        <item>5 km</item>
+        <item>10 km</item>
+        <item>20 km</item>
+        <item>50 km</item>
+        <item>100 km</item>
+    </string-array>
+
+    <string-array name="distance_population_low_ml">
+        <item>Any</item>
+        <item>1 ml</item>
+        <item>5 ml</item>
+        <item>10 ml</item>
+        <item>20 ml</item>
+        <item>50 ml</item>
+        <item>100 ml</item>
+    </string-array>
+
+    <string-array name="item_value_low">
+        <item>0</item>
+        <item>1000</item>
+        <item>5000</item>
+        <item>10000</item>
+        <item>20000</item>
+        <item>50000</item>
+        <item>100000</item>
+    </string-array>
+
+    <string-array name="distance_population_high_km">
+        <item>Any</item>
+        <item>0.5 km</item>
+        <item>1 km</item>
+        <item>1.5 km</item>
+        <item>2 km</item>
+        <item>2.5 km</item>
+        <item>3 km</item>
+        <item>3.5 km</item>
+        <item>5 km</item>
+        <item>5.5 km</item>
+        <item>10 km</item>
+        <item>15 km</item>
+        <item>20 km</item>
+        <item>30 km</item>
+        <item>50 km</item>
+        <item>70 km</item>
+        <item>100 km</item>
+    </string-array>
+
+    <string-array name="distance_population_high_ml">
+        <item>Any</item>
+        <item>0.5 ml</item>
+        <item>1 ml</item>
+        <item>1.5 ml</item>
+        <item>2 ml</item>
+        <item>2.5 ml</item>
+        <item>3 ml</item>
+        <item>3.5 ml</item>
+        <item>5 ml</item>
+        <item>5.5 ml</item>
+        <item>10 ml</item>
+        <item>15 ml</item>
+        <item>20 ml</item>
+        <item>30 ml</item>
+        <item>50 ml</item>
+        <item>70 ml</item>
+        <item>100 ml</item>
+    </string-array>
+
+    <string-array name="item_value_high">
+        <item>0</item>
+        <item>500</item>
+        <item>1000</item>
+        <item>1500</item>
+        <item>2000</item>
+        <item>2500</item>
+        <item>3000</item>
+        <item>3500</item>
+        <item>5000</item>
+        <item>5500</item>
+        <item>10000</item>
+        <item>15000</item>
+        <item>20000</item>
+        <item>30000</item>
+        <item>50000</item>
+        <item>70000</item>
+        <item>100000</item>
+    </string-array>
+
+    <string-array name="coins">
+        <item>Coin</item>
+        <item>Coins</item>
+        <item>Coins</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,11 @@
+<resources>
+    <!--
+    Package name:
+    com.instamaven.app
+
+    SHA-1 certificate fingerprint:
+    0F:1E:D8:B0:87:47:B3:21:9C:93:08:DC:AF:EB:49:85:F2:D9:38:0D
+
+    -->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyB21PiHFLajB7T0-TmRM1r72sNkLnSEPzI</string>
+</resources>

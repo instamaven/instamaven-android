@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">InstaMaven Staging</string>
+    <string name="api_url">https://staging.instamaven.com</string>
+
+    <!-- Facebook -->
+    <string name="facebook_app_id">1921829734796788</string>
+    <string name="fb_login_protocol_scheme">fb1921829734796788</string>
+
+    <!-- Google -->
+    <string name="server_client_id">900441643432-03ctmg1j3u7fituahga0cdruogg73kg7.apps.googleusercontent.com</string>
+</resources>
